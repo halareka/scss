@@ -1,0 +1,93 @@
+// @mixin half-let($x){
+//     font-size: $x / 2;
+// }
+@mixin tr($x){
+    background-color: $x;
+}
+
+
+$body-bg-color: #F5E7DA;
+$un-font: #545D7A;
+$main-color: rgb(255, 255, 255);
+$main-color-two: rgb(0, 0, 0);
+body{
+    display: flex;
+    justify-content: center;
+    background-color: $body-bg-color;
+}
+.main {
+    box-shadow: 0px 7px 29px 0px #64646F33;
+    //коментарии удобные в сксс,вообще js напоминает синтаксисом даже
+    //надо бы как-то отключить оповещение об ошибке в koala ,подбешивают
+    margin-top:120px;
+    background-color: $main-color;
+    width: 323px;
+    height: 473px;
+    border-radius: 10px;
+    .foot{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 87%;
+        height: 50.5%;
+        margin: -4px 0 0 6.5%;
+        .content__btn{
+            width: 100%;
+            height: 45px;
+        }
+        .content__text{
+            font-size: 16px;
+            padding-left: 5px;
+            font-family: sans-serif;
+
+            h3{
+                margin: 10px 0 0 0;
+            }
+            p{
+                margin: 12px 0 0 0;
+                font-size: 16.7px;
+            }
+        }
+        .information{
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 38px 0 0 5px;
+            height: 50px;
+            .card_box{
+                width: 53px;
+            }
+            .info_box{
+                font-family: sans-serif;
+                h4{
+                    margin: 7px 0 0 2px;
+                }
+                p{
+                    color: $un-font;
+                    font-size: 14px;
+                    margin: 5px 0 0 2px;
+                }
+            }
+        }
+    }
+}//такая вложеность - нормально???
+
+.btn{
+    transition: 0.3s;
+    padding: 0 10px 0px 9px;
+    height: 19px;
+    margin-top: 25px;
+    margin-left: 5px;
+    border: none;
+    background-color:#F97316;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 11.5px;
+    p{
+        margin: 0;
+    }
+    &:hover{
+        @include tr(purple);
+    }
+}
+
+
