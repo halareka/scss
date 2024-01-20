@@ -32,7 +32,7 @@ body {
     .main .foot .information {
       display: flex;
       flex-wrap: nowrap;
-      padding: 38px 0 0 5px;
+      padding: 30px 0 0 5px;
       height: 50px; }
       .main .foot .information .card_box {
         width: 53px; }
